@@ -32,16 +32,13 @@ public class MenuGUI_B {
 	private String[][] menuItemStrings = {{"Apple", "Banana", "Grape", "Mango", "Orange", "Peach", "Pineapple", "Raspberry", "Strawberry", "Watermelon"},
 			{"Carrot", "Celery", "Cucumber", "Garlic", "Mushroom", "Onion", "Pea", "Potato", "Spinach", "Tomato"},
 			{"Cashier", "Chef", "Dentist", "Doctor", "Farmer", "Janitor", "Salesperson", "Secretary", "Teacher", "Waiter"},
-			{"Antropology", "Astronomy", "Biology", "Botany", "Chemistry", "Cosmology", "Geology", "Physics", "Psychology", "Zoology"},
+			{"Anthropology", "Astronomy", "Biology", "Botany", "Chemistry", "Cosmology", "Geology", "Physics", "Psychology", "Zoology"},
 			{"Eight","Five","Four","Nine","One","Seven","Six","Three","Two","Zero"},
 			{"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}};
 	private JFrame frame;
 	private JLabel textClickOn;
-	private final int ITERATIONS = 5;
+	private final int ITERATIONS = 50;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -55,16 +52,10 @@ public class MenuGUI_B {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public MenuGUI_B() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
